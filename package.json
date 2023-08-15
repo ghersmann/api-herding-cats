@@ -1,0 +1,30 @@
+{
+  "name": "2023-05-final-project-indymap-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start:dev": "nodemon ./src/index.js",
+    "start": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coding-bootcamps-eu/2023-05-final-project-indymap-api"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coding-bootcamps-eu/2023-05-final-project-indymap-api/issues"
+  },
+  "homepage": "https://github.com/coding-bootcamps-eu/2023-05-final-project-indymap-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "json-server": "^0.17.3",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
