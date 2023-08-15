@@ -6,15 +6,19 @@
       "useDarkMode": true
     }
   ],
-  "cards": [
+  "maps": [
     {
       "id": "7220e93a-804f-4c9e-880a-8e53e429c1b3",
       "userId": "4a3eac09-f652-4d5e-8f4d-691502a71ef6",
-      "title": "Intro to HTML",
-      "description": "A short description.",
-      "entries": [
+      "mapTitle": "Intro to HTML",
+      "mapDescription": "A short description.",
+      "pins": [
         {
           "id": 1,
+          "geoLocation":{
+            "lang":33.588,
+            "lat":27.55
+          },
           "header": "",
           "description": "",
           "createdAt": ""
