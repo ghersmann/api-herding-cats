@@ -50,6 +50,14 @@ npm run start:dev
 
 Open http://localhost:<APP_PORT_FROM_ENV_FILE>/<YOUR_ROUTE>
 
+## Common Endpoints
+
+```
+localhost:3000/users
+localhost:3000/maps
+localhost:3000/userid?_embed=maps
+```
+
 ## Customize
 
 ### Custom Routes
