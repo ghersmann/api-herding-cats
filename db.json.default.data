@@ -12,12 +12,16 @@
       "userId": "4a3eac09-f652-4d5e-8f4d-691502a71ef6",
       "mapTitle": "Intro to HTML",
       "mapDescription": "A short description.",
+      "mapViewLocation":{
+        "lat":27.55, 
+        "lng":33.588 
+        },
       "pins": [
         {
           "id": 1,
           "geoLocation":{
-            "lang":33.588,
-            "lat":27.55
+            "lat":27.55,
+            "lng":33.588
           },
           "header": "",
           "description": "",
