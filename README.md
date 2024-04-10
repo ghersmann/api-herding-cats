@@ -1,4 +1,4 @@
-# 2023-05-final-project-indymap-api
+# 2024-01-final-project-herding-cats
 
 ## Requirements
 
@@ -8,7 +8,12 @@
 
 ### Clone repo
 
-Clone the repository to your local machine
+Clone the repository to your local machine and change into the newly created directory
+
+```
+git clone git@github.com:coding-bootcamps-eu/final-project-2024-01-herding-cats-api
+cd final-project-2024-01-herding-cats-api
+```
 
 ### npm install
 
@@ -48,14 +53,13 @@ cp db.json.default.empty db.json
 npm run start:dev
 ```
 
-Open http://localhost:<APP_PORT_FROM_ENV_FILE>/<YOUR_ROUTE>
+Open http://localhost:<APP_PORT_FROM_ENV_FILE>/<YOUR_ROUTE> (example: `http://localhost:3000/users`)
 
 ## Common Endpoints
 
 ```
 localhost:3000/users
-localhost:3000/maps
-localhost:3000/userid?_embed=maps
+localhost:3000/events
 ```
 
 ## Customize
