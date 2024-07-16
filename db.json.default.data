@@ -2,119 +2,481 @@
   "users": [
     {
       "id": "4a3eac09-f652-4d5e-8f4d-691502a71ef6",
-      "name": "pinhead",
-      "email": "pinhead@test.de"
+      "name": "John Doe",
+      "email": "john@test.de",
+      "password": "John1234",
+      "trips": ["12345", "1713948486160", "17"]
     },
-        {
+    {
       "id": "4a3eav12-e682-4r7r-9f4t-711502a71ef6",
-      "name": "jane",
-      "email": "jane@test.de"
+      "name": "Jane Doe",
+      "email": "jane@test.de",
+      "password": "Jane1234",
+      "trips": [
+        "1714027847900",
+        "1714029612972",
+        "1714030246633",
+        "1714031007615",
+        "17"
+      ]
+    },
+    {
+      "id": "4a3eav12-e682-4r7r-9f4t-711502a71ff4",
+      "name": "Claas",
+      "email": "claas@test.de",
+      "password": "Claas123",
+      "trips": [
+        "12345",
+        "1713948486160",
+        "1714029612972",
+        "1714030246633",
+        "1714031007615",
+        "17"
+      ]
     }
   ],
-
   "events": [
     {
-      "id": "7220e93a-804f-4c9e-880a-8e53e429c1b3",
-      "userId": "4a3eac09-f652-4d5e-8f4d-691502a71ef6",
-      "eventTitle": "Ausflug nach Malaga",
-      "eventDescription": "Eine kleine Beschreibung meines Trips nach Malaga.",
-      "eventViewLocation":{
-        "lat":27.55, 
-        "lng":33.588 
-      },
-      "public": false,
-      "details": [
+      "id": 12345,
+      "admins": [
         {
-          "category": "flight",
-          "startDate": "05-13-2024",
-          "startTime": "9:45",
-          "endDate": "05-13-2024",
-          "endTime": "14:00",
-          "from": "Hamburg Flughafen",
-          "to": "Malaga Airport",
-          "gate": "D4",
-          "company": "Musterflüge",
-          "seat": "23B"
-        },
-        {
-          "category": "hotel",
-          "startDate": "05-13-2024",
-          "startTime": "15:00",
-          "endDate": "12-13-2024",
-          "endTime": "11:00",
-          "company": "Musterhotels",
-          "room": "132",
-          "address": {
-            "city": "Malaga",
-            "street": "Musterstraße 14",
-          }
-        },
-        {
-          "category": "flight",
-          "startDate": "12-13-2024",
-          "startTime": "15:45",
-          "endDate": "12-13-2024",
-          "endTime": "19:00",
-          "from": "Malaga Airport",
-          "to": "Hamburg Flughafen",
-          "gate": "D4",
-          "company": "Musterflüge",
-          "seat": "23B"
+          "userId": "4a3eav12-e682-4r7r-9f4t-711502a71ef6"
         }
-      ]
+      ],
+      "tripTitle": "Melbourne, Australia",
+      "tripStart": "27.04.2024 - 08:50",
+      "tripEnd": "28.04.2024 - 08:50",
+      "public": true,
+      "details": {
+        "transport": [
+          {
+            "category": "transport",
+            "name": "Flight to Melbourne",
+            "zipcode": "",
+            "city": "Frankfurt a.M.",
+            "address": "",
+            "startDate": "27.04.2024 - 08:52",
+            "endDate": "27.04.2024 - 19:52",
+            "notes": "",
+            "isAdmin": false,
+            "id": "796749"
+          },
+          {
+            "category": "transport",
+            "name": "Flight to Frankfurt",
+            "zipcode": "",
+            "city": "Melbourne",
+            "address": "",
+            "startDate": "28.04.2024 - 08:56",
+            "endDate": "28.04.2024 - 22:52",
+            "notes": "",
+            "isAdmin": false,
+            "id": "482203"
+          }
+        ],
+        "lodging": [
+          {
+            "category": "lodging",
+            "name": "Fawlty Towers",
+            "zipcode": "",
+            "city": "Melbourne",
+            "address": "Queen Victoria Market 1",
+            "startDate": "27.04.2024 - 21:00",
+            "endDate": "28.04.2024 - 10:00",
+            "notes": "Breakfast NOT included",
+            "isAdmin": false,
+            "id": "667395"
+          }
+        ],
+        "activity": [
+          {
+            "category": "activity",
+            "name": "Coffee Tasting",
+            "zipcode": "",
+            "city": "Pedros Coffee",
+            "address": "608 St. Kilda Road",
+            "startDate": "28.04.2024 - 05:00",
+            "endDate": "28.04.2024 - 06:00",
+            "notes": "",
+            "isAdmin": false,
+            "id": "449070"
+          }
+        ],
+        "groupmembers": [
+          {
+            "category": "groupmembers",
+            "name": "Glenn Diesel",
+            "zipcode": "",
+            "city": "",
+            "address": "",
+            "notes": "",
+            "isAdmin": false,
+            "id": "535510"
+          },
+          {
+            "category": "groupmembers",
+            "name": "Max Petrol",
+            "zipcode": "",
+            "city": "",
+            "address": "",
+            "notes": "",
+            "isAdmin": false,
+            "id": "429762"
+          },
+          {
+            "category": "groupmembers",
+            "name": "Karen Hydro",
+            "zipcode": "",
+            "city": "",
+            "address": "",
+            "notes": "",
+            "isAdmin": false,
+            "id": "25615"
+          }
+        ],
+        "packlist": [
+          "Coffee Beans",
+          "Coffee Grinder",
+          "Camping Stove",
+          "Water Bottles"
+        ],
+        "notes": ["Please add your notes on how the coffee tasting goes here!"]
+      }
     },
     {
-      "id": "7220e93a-804f-4c9e-880a-8e53e429c1b3",
-      "userId": "4a3eav12-e682-4r7r-9f4t-711502a71ef6",
-      "eventTitle": "Ausflug nach Malaga",
-      "eventDescription": "Eine kleine Beschreibung meines Trips nach Malaga.",
-      "eventViewLocation":{
-        "lat":27.55, 
-        "lng":33.588 
-      },
-      "public": true,
-      "invited": [
-        "4a3eac09-f652-4d5e-8f4d-691502a71ef6"
-      ]
-      "details": [
+      "id": 1713948486160,
+      "admins": [
         {
-          "category": "flight",
-          "startDate": "05-13-2024",
-          "startTime": "9:45",
-          "endDate": "05-13-2024",
-          "endTime": "14:00",
-          "from": "Hamburg Flughafen",
-          "to": "Malaga Airport",
-          "gate": "D4",
-          "company": "Musterflüge",
-          "seat": "23B"
+          "userId": "4a3eac09-f652-4d5e-8f4d-691502a71ef6"
         },
         {
-          "category": "hotel",
-          "startDate": "05-13-2024",
-          "startTime": "15:00",
-          "endDate": "12-13-2024",
-          "endTime": "11:00",
-          "company": "Musterhotels",
-          "room": "132",
-          "address": {
-            "city": "Malaga",
-            "street": "Musterstraße 14",
-          }
-        },
-        {
-          "category": "flight",
-          "startDate": "12-13-2024",
-          "startTime": "15:45",
-          "endDate": "12-13-2024",
-          "endTime": "19:00",
-          "from": "Malaga Airport",
-          "to": "Hamburg Flughafen",
-          "gate": "D4",
-          "company": "Musterflüge",
-          "seat": "23B"
+          "userId": "4a3eav12-e682-4r7r-9f4t-711502a71ef6"
         }
-      ]
+      ],
+      "tripTitle": "Ausflug nach Bremen",
+      "tripStart": "16.06.2024 - 13:30",
+      "tripEnd": "20.06.2024 - 12:00",
+      "public": false,
+      "details": {
+        "transport": [
+          {
+            "category": "transport",
+            "name": "Hauptbahnhof",
+            "startDate": "16.05.2024 - 13:30",
+            "endDate": "16.05.2024 - 15:07",
+            "zipcode": "20099",
+            "city": "Hamburg",
+            "address": "Hachmannplatz 16",
+            "notes": "Wir treffen uns 15 Minuten vorher bei Gleis 3."
+          },
+          {
+            "category": "transport",
+            "name": "Parkplatz bei Aldi",
+            "startDate": "20.05.2024 - 12:00",
+            "zipcode": "28195",
+            "city": "Bremen",
+            "address": "Aldiallee 13"
+          }
+        ],
+        "lodging": [
+          {
+            "category": "lodging",
+            "name": "Vier Jahreszeiten",
+            "zipcode": "28195",
+            "city": "Bremen",
+            "address": "Hauptstr. 1"
+          }
+        ],
+        "activity": [
+          {
+            "category": "activity",
+            "name": "Stadtführung",
+            "startDate": "17.05.2024 - 10:00",
+            "endDate": "17.05.2024 - 12:00",
+            "zipcode": "28195",
+            "city": "Bremen",
+            "address": "Mozartstr. 42"
+          },
+          {
+            "category": "activity",
+            "name": "Fußball spielen",
+            "startDate": "19.05.2024 - 13:00",
+            "notes": "Wir gehen vom Hotel gemeinsam zum Sportplatz"
+          }
+        ],
+        "groupmembers": [
+          {
+            "name": "Gustav",
+            "id": "1"
+          },
+          {
+            "name": "Sonja",
+            "id": "2"
+          },
+          {
+            "name": "Claas",
+            "id": "3",
+            "startDate": "19.05.2024 - 12:30",
+            "endDate": "20.05.2024 - 18:00"
+          }
+        ],
+        "packlist": ["Fußball", "Bahnticket", "Gute Laune :)"],
+        "notes": [
+          "Ethically investing dynamically customer-focused propositions is crucial to our unparalleled dot-bomb. Intelligently touching base about monetizing products will make us leaders in the best-of-breed paradigm shift industry. Key players will take ownership of their ballpark figures by effectively revolutionizing next-generation innovations. Efficiencies will come from proactively connecting our standard setters.\n\nWe aim to reliably strategize our stakeholder by virtually right-sizing our cloud native self-driving brands. We thrive because of our company-wide deliverable and world-class architecture culture. It's critical that we give 110% when globally productizing executive searches. Our bandwidth development lifecycle enables mobile, proactive intrapreneurs."
+        ]
+      }
+    },
+    {
+      "id": 1714029612972,
+      "admins": [
+        {
+          "userId": "4a3eav12-e682-4r7r-9f4t-711502a71ef6"
+        }
+      ],
+      "tripTitle": "Vegas Baby!",
+      "tripStart": "04.05.2024 - 09:20",
+      "tripEnd": "12.05.2024 - 09:20",
+      "public": true,
+      "details": {
+        "transport": [
+          {
+            "category": "transport",
+            "name": "Claas Auto",
+            "zipcode": "",
+            "city": "Ratzeburg",
+            "address": "Parkplatz Rewe",
+            "startDate": "05.05.2024 - 09:21",
+            "notes": "Long drive - Bring snacks",
+            "isAdmin": false,
+            "id": "338563"
+          }
+        ],
+        "lodging": [
+          {
+            "category": "lodging",
+            "name": "Marriot Hotel",
+            "zipcode": "",
+            "city": "Las Vegas",
+            "address": "",
+            "startDate": "05.05.2024 - 09:22",
+            "endDate": "12.05.2024 - 09:22",
+            "notes": "",
+            "isAdmin": false,
+            "id": "99854"
+          }
+        ],
+        "activity": [
+          {
+            "category": "activity",
+            "name": "Gambling",
+            "zipcode": "",
+            "city": "\"The Strip\"",
+            "address": "Las Vegas Boulevard",
+            "startDate": "05.05.2024 - 09:23",
+            "endDate": "12.05.2024 - 09:23",
+            "notes": "Don't loose ALL your money, we have to pay gas money to Claas afterwards",
+            "isAdmin": false,
+            "id": "613048"
+          }
+        ],
+        "groupmembers": [
+          {
+            "category": "groupmembers",
+            "name": "Ziggy",
+            "zipcode": "",
+            "city": "",
+            "address": "",
+            "notes": "",
+            "isAdmin": false,
+            "id": "298142"
+          },
+          {
+            "category": "groupmembers",
+            "name": "Connie",
+            "zipcode": "",
+            "city": "",
+            "address": "",
+            "notes": "",
+            "isAdmin": false,
+            "id": "530894"
+          },
+          {
+            "category": "groupmembers",
+            "name": "Chantal",
+            "zipcode": "",
+            "city": "",
+            "address": "",
+            "notes": "",
+            "isAdmin": false,
+            "id": "260806"
+          },
+          {
+            "category": "groupmembers",
+            "name": "Michelle",
+            "zipcode": "",
+            "city": "",
+            "address": "",
+            "notes": "",
+            "isAdmin": false,
+            "id": "844261"
+          },
+          {
+            "category": "groupmembers",
+            "name": "Sunken",
+            "zipcode": "",
+            "city": "",
+            "address": "",
+            "notes": "",
+            "isAdmin": false,
+            "id": "892827"
+          }
+        ],
+        "packlist": ["Deodorant.", "Shoes"],
+        "notes": ["No guns this time Michelle!"]
+      }
+    },
+    {
+      "id": 1714030246633,
+      "admins": [
+        {
+          "userId": "4a3eav12-e682-4r7r-9f4t-711502a71ef6"
+        }
+      ],
+      "tripTitle": "Los Angeles",
+      "tripStart": "28.06.2024 - 09:30",
+      "tripEnd": "03.08.2024 - 09:30",
+      "public": true,
+      "details": {
+        "transport": [],
+        "lodging": [],
+        "activity": [
+          {
+            "category": "activity",
+            "name": "Petersen Automotive Museum",
+            "zipcode": "",
+            "city": "Los Angeles",
+            "address": "6060 Wilshire Blvd",
+            "startDate": "28.06.2024 - 10:00",
+            "endDate": "03.08.2024 - 18:00",
+            "notes": "Sonja's car collection is on temporary display during this time",
+            "isAdmin": false,
+            "id": "403834"
+          }
+        ],
+        "groupmembers": [],
+        "packlist": [],
+        "notes": []
+      }
+    },
+    {
+      "id": 1714031007615,
+      "admins": [
+        {
+          "userId": "4a3eav12-e682-4r7r-9f4t-711502a71ef6"
+        }
+      ],
+      "tripTitle": "Glurns, Südtirol",
+      "tripStart": "18.05.2024 - 09:43",
+      "tripEnd": "02.06.2024 - 09:43",
+      "public": true,
+      "details": {
+        "transport": [
+          {
+            "category": "transport",
+            "name": "Erfurt nach Glurns",
+            "zipcode": "",
+            "city": "Erfurt Hbf",
+            "address": "",
+            "startDate": "18.05.2024 - 09:32",
+            "endDate": "18.05.2024 - 19:35",
+            "notes": "",
+            "isAdmin": false,
+            "id": "662827"
+          },
+          {
+            "category": "transport",
+            "name": "Glurns nach Erfurt",
+            "zipcode": "",
+            "city": "Glurns",
+            "address": "Tauferer Tor",
+            "startDate": "02.06.2024 - 12:08",
+            "endDate": "02.06.2024 - 22:09",
+            "notes": "",
+            "isAdmin": false,
+            "id": "464428"
+          }
+        ],
+        "lodging": [
+          {
+            "category": "lodging",
+            "name": "Camping im Park",
+            "zipcode": "",
+            "city": "Glurns",
+            "address": "Parkweg 1, 39020 Glorenza BZ, Italy",
+            "startDate": "18.05.2024 - 15:00",
+            "endDate": "02.06.2024 - 10:00",
+            "notes": "",
+            "isAdmin": false,
+            "id": "6197"
+          }
+        ],
+        "activity": [],
+        "groupmembers": [],
+        "packlist": [
+          "Zelt",
+          "Schlafsack",
+          "Campingkocher",
+          "Wanderschuhe",
+          "Nudeln"
+        ],
+        "notes": []
+      }
+    },
+    {
+      "id": 17,
+      "admins": [
+        {
+          "userId": "4a3eac09-f652-4d5e-8f4d-691502a71ef6"
+        }
+      ],
+      "tripTitle": "Gotha",
+      "tripStart": "14.06.2024 - 11:33",
+      "tripEnd": "16.06.2024 - 11:33",
+      "public": false,
+      "details": {
+        "transport": [
+          {
+            "category": "transport",
+            "name": "Claas Auto",
+            "zipcode": "",
+            "city": "",
+            "address": "Parkplatz bei Tegut",
+            "startDate": "14.06.2024 - 11:34",
+            "endDate": "14.06.2024 - 15:34",
+            "notes": "",
+            "isAdmin": false,
+            "id": "81050"
+          }
+        ],
+        "lodging": [
+          {
+            "category": "lodging",
+            "name": "Gothaer Hof",
+            "zipcode": "",
+            "city": "",
+            "address": "",
+            "startDate": "14.06.2024 - 11:34",
+            "endDate": "16.06.2024 - 11:34",
+            "notes": "",
+            "isAdmin": false,
+            "id": "209625"
+          }
+        ],
+        "activity": [],
+        "groupmembers": [],
+        "packlist": [],
+        "notes": []
+      }
     }
   ]
 }
